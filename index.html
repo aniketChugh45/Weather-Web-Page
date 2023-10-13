@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <div class="container">
+
+            <h1 class="heading">WEATHER APP</h1>
+
+            <div class="choose-container">
+
+                <div class="user-weather">Your Weather</div>
+                <div class="search-weather">Search Weather</div>
+
+            </div>
+
+            <div class="grant-location-container">
+
+                <img src="./assets/location.png" width="75" height="75">
+                <h2>Grant Location Access</h2>
+                <p>Allow Access To Get Weather Information</p>
+                <button class="grant-access-btn">GRANT ACCESS</button>
+
+            </div>
+
+            <div class="search-city-container">
+                <input type="text" placeholder="Search for city ..." class="input-city-value">
+                <button class="search-city-btn">
+                    <img src="./assets/search.png" width="30" height="30">
+                </button>
+                
+            </div>
+
+            <div class="weather-display-container">
+
+                <div class="info-country">
+                    <p class="city-name"></p>
+                    <img class="country-img">
+                </div>
+                <p class="description-txt"></p>
+                <img class="description-img">
+                <p class="temperature"></p>
+
+                <div class="all-containers">
+                    <div class="windspeed-container common-cards">
+                        <img src="./assets/wind.png" class="preset-parameters-img">
+                        <p class="const-txt">WINDSPEED</p>
+                        <p class="wind-value"></p>
+                    </div>
+    
+                    <div class="humidity-container common-cards">
+                        <img src="./assets/humidity.png" class="preset-parameters-img">
+                        <p class="const-txt">HUMIDITY</p>
+                        <p class="humidity-value"></p>
+                    </div>
+    
+                    <div class="cloudiness-container common-cards">
+                        <img src="./assets/cloud.png" class="preset-parameters-img">
+                        <p class="const-txt">CLOUDS</p>
+                        <p class="cloudiness-value"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="loading-container">
+                <img src="./assets/loading.gif" class="loading-img" width="150" height="150">
+                <p>LOADING</p>
+            </div>
+
+
+            <div class="not-found-container">
+                <img src="./assets/not-found.png" width="300" height="300">
+                <p>city not found</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
